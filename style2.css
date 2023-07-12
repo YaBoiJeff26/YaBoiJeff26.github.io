@@ -1,0 +1,202 @@
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+body{
+    animation: transitionIn 0.75s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(tatajalandigbk.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    position: fixed;
+    top: 2%;
+    left: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .btr{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 7%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #c5c5c5;
+}
+
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+    height: auto;
+}
+
+.content p{
+    font-size: 20px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    height: auto;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+
+
+.button1{
+    top: 0%;
+    width: 10%;
+    margin-right: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b99c31, #dcb93a);
+    transition: 0.5s all;
+    transform: translateX(100px);
+    animation: button_one linear;
+}
+
+.btn{
+    transform: translateX(0) translateY(0);
+}
+
+.button1:hover{
+    box-shadow:  5px 5px 10px #caaa35,
+    -5px -5px 10px #d2b037;
+}
+
+
+.button2{
+    width: 10%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b99c31, #dcb93a);
+    transition: 0.5s all;
+}
+.button2:hover{
+    box-shadow:  5px 5px 10px #caaa35,
+    -5px -5px 10px #d2b037;
+}
+
+.button3{
+    width: 10%;
+    padding: 10px 15px;
+    margin-left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b99c31, #dcb93a);
+    transition: 0.5s all;
+    transform: translateX(-100px);
+}
+.button3:hover{
+    box-shadow:  5px 5px 10px #caaa35,
+    -5px -5px 10px #d2b037;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+
+.button4{
+    width: 10%;
+    margin-right: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b99c31, #dcb93a);
+    transition: 0.5s all;
+    transform: translateX(100px) translateY(-60px);
+}
+.button4:hover{
+    box-shadow:  5px 5px 10px #caaa35,
+    -5px -5px 10px #d2b037;
+}
+
+
+.button5{
+    width: 10%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b99c31, #dcb93a);
+    transition: 0.5s all;
+    transform: translateY(-60px);
+}
+.button5:hover{
+    box-shadow:  5px 5px 10px #caaa35,
+    -5px -5px 10px #d2b037;
+}
+
+
+.button6{
+    width: 10%;
+    margin-left: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b99c31, #dcb93a);
+    transition: 0.5s all;
+    transform: translateX(-100px) translateY(-60px);
+}
+.button6:hover{
+    box-shadow:  5px 5px 10px #caaa35,
+    -5px -5px 10px #d2b037;
+}
+
+
+.btn{
+    animation: button_in;
+}
+
+@keyframes button_in {
+    from{background-color: #b99c31;}
+    to{background-color: aqua;}
+}

@@ -1,0 +1,116 @@
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+body{
+    animation: transitionIn 0.75s;
+}
+
+
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-image: url(backgroundtemen5.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    padding: 0 7%;
+    transition: background-image 0.5s;
+}
+
+nav{
+    position: fixed;
+    top: 2%;
+    left: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .btr{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 7%;
+}
+
+.main-video{
+    margin-top: 60px;
+}
+
+.contents{
+    width: auto;
+    height: auto;
+    color: #fff;
+    margin-right: 140px;
+    top: 280px;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align:justify;
+    size: 30%;
+    /*margin-left: 650px;*/
+}
+
+.kata{
+    color: #c5c5c5;
+
+}
+
+.stats{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+
+.stats div{
+    margin: 0 20px;
+}
+
+.stats div h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.stats .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+}
